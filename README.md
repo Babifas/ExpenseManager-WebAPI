@@ -1,92 +1,60 @@
-# Expense Tracker Web API
+# Expense Manager
 
-This repository contains a simple expense tracker project built using ASP.NET Web API with ADO.NET disconnected architecture. The project allows users to manage their expenses by providing endpoints for CRUD operations on expense data. It includes functionalities to add, retrieve, update, and delete expenses from a SQL Server database. This project serves as a foundation for building a web or mobile client application to interact with the expense tracking system.
-
-## Features# Expense Tracker Web API
-
-This repository contains a simple expense tracker project built using ASP.NET Web API with ADO.NET disconnected architecture. The project allows users to manage their expenses by providing endpoints for CRUD operations on expense data. It includes functionalities to add, retrieve, update, and delete expenses from a SQL Server database. This project serves as a foundation for building a web or mobile client application to interact with the expense tracking system.
+Expense Manager is a web-based application built with ASP.NET Web API, ADO.NET (disconnected architecture), and MS SQL Server, designed to help users manage their expenses efficiently.
 
 ## Features
 
-- **CRUD Operations**: Easily perform Create, Read, Update, and Delete operations on expense data.
-- **ASP.NET Web API**: Utilizes ASP.NET Web API framework for building RESTful APIs.
-- **ADO.NET Disconnected Architecture**: Implements ADO.NET disconnected architecture for efficient data access.
-- **SQL Server Database**: Stores expense data in a SQL Server database for reliability and scalability.
+- **Expense Management**: Allows users to add, view, update, and delete expenses.
+- **Categories**: Organize expenses into different categories for better tracking.
+- **Authentication**: Secure user authentication system to protect user data.
+- **Validation**: Implements robust validation to ensure data integrity.
+- **Disconnected Architecture**: Utilizes ADO.NET disconnected architecture for efficient data handling.
+- **Scalable**: Designed with scalability in mind to accommodate future expansion.
+- **RESTful API**: Provides a RESTful API for seamless integration with other systems.
 
-## Getting Started
+## Installation
 
-To get started with the Expense Tracker Web API, follow these steps:
+1. **Clone the Repository**: 
+    ```
+    git clone https://github.com/Babifas/ExpenseManager-WebAPI.git
+    ```
 
-1. **Clone the repository**:
+2. **Set up Database**:
+    - Create a new MS SQL Server database.
+    - Execute the SQL scripts provided in the `database` directory to create the necessary tables and schema.
 
-   ```bash
-   git clone https://github.com/Babifas/ExpenseTracker-WebAPI.git
-   ```
+3. **Configure Connection String**:
+    - Update the connection string in `Web.config` to point to your SQL Server database.
 
-2. **Set up the database**:
+4. **Build and Run**:
+    - Open the solution in Visual Studio.
+    - Build the solution and run the application.
 
-   - Create a SQL Server database and execute the SQL scripts provided in the `database-scripts` directory to create the necessary tables.
+5. **Access the Application**:
+    - Access the application through your web browser at the specified URL.
 
-3. **Configure the connection string**:
+## Usage
 
-   - Update the connection string in the `Web.config` file with your SQL Server database connection details.
-
-4. **Build and run the project**:
-
-   - Open the solution in Visual Studio and build the project.
-   - Press F5 to run the project. The Web API will be hosted locally.
-
-5. **Test the API**:
-
-   - Use tools like Postman or curl to test the API endpoints for CRUD operations on expenses.
+- Register for a new account or log in if you already have an account.
+- Add, view, update, or delete expenses from the dashboard.
+- Organize expenses into different categories for better management.
+- Securely log out after your session.
 
 ## Contributing
 
-Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/my-feature`).
+3. Commit your changes (`git commit -am 'Add my feature'`).
+4. Push to the branch (`git push origin feature/my-feature`).
+5. Create a new Pull Request.
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
 
+## Contact
 
-
-- **CRUD Operations**: Easily perform Create, Read, Update, and Delete operations on expense data.
-- **ASP.NET Web API**: Utilizes ASP.NET Web API framework for building RESTful APIs.
-- **ADO.NET Disconnected Architecture**: Implements ADO.NET disconnected architecture for efficient data access.
-- **SQL Server Database**: Stores expense data in a SQL Server database for reliability and scalability.
-
-## Getting Started
-
-To get started with the Expense Tracker Web API, follow these steps:
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/Babifas/ExpenseTracker-WebAPI.git
-   ```
-
-2. **Set up the database**:
-
-   - Create a SQL Server database and execute the SQL scripts provided in the `database-scripts` directory to create the necessary tables.
-
-3. **Configure the connection string**:
-
-   - Update the connection string in the `Web.config` file with your SQL Server database connection details.
-
-4. **Build and run the project**:
-
-   - Open the solution in Visual Studio and build the project.
-   - Press F5 to run the project. The Web API will be hosted locally.
-
-5. **Test the API**:
-
-   - Use tools like Postman or curl to test the API endpoints for CRUD operations on expenses.
-
-## Contributing
-
-Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+For any inquiries or feedback, please contact [babifasp@gmail.com](mailto:babifasp@gmail.com).
 
